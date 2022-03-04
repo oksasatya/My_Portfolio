@@ -2,23 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
-    public function donwload()
+
+    public function index()
+    {
+        return view('index');
+    }
+
+
+    public function donwload($file_name)
 
     {
-        $file = public_path() . "/images/test.jpg";
+        $file_name = public_path() . '/storage/donwload/my-cv.pdf';
+        $file = Storage::disk('public')->get($file_name);
 
-        $headers = ['Content-Type: image/jpeg'];
-
-        if (file_exists($file)) {
-            return Response::download($file, 'plugin.jpg', $headers);
-        } else {
-            echo ('File not found.');
-        }
+        return (new Response($file, 200))
+            ->header('content-type', 'application/pdf');
     }
 }

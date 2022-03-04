@@ -1,4 +1,4 @@
-<nav class="flex items-center justify-between flex-wrap p-4">
+<nav class="flex items-center justify-between bg-gradient-to-r from-gradient-red to-gradient-blue flex-wrap p-8">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
             style=" fill:#fff;">
@@ -19,7 +19,7 @@
     </div>
     <div class="w-full mobile-menu hidden flex-grow  lg:flex lg:mx-96 lg:w-auto">
         <div class="text-base  lg:flex-grow">
-            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white ml-2 hover:text-cyan-500 mr-4">
+            <a href="#home" class="block mt-4 lg:inline-block lg:mt-0 text-white ml-2 hover:text-cyan-500 mr-4">
                 Home
             </a>
             <a href="#" class="block mt-4 lg:inline-block ml-2 lg:mt-0 text-white hover:text-cyan-500 mr-4">

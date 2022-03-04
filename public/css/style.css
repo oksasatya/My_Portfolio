@@ -11,8 +11,13 @@
     font-family: "League Spartan", sans-serif;
 }
 body {
-    background-image: var(--gradient);
     color: white;
+}
+
+#home {
+    background-image: var(--gradient);
+    background-size: cover;
+    background-position: center;
 }
 
 .text-gradient {
