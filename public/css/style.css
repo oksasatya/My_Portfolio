@@ -1,0 +1,20 @@
+:root {
+    --gradient: linear-gradient(90deg, #edaef9ff, #81b1faff);
+    --primary: #81b1faff;
+    --secondary: #edaef9ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+body {
+    background-image: var(--gradient);
+    color: white;
+}
+
+.text-gradient {
+    color: var(--primary);
+}
